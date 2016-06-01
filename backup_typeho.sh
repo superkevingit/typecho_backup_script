@@ -74,7 +74,7 @@ echo "Tar done."
 echo "Try to pack..."
 md5sum "$dump_target" > "$dump_target.md5sum"
 md5sum "$tar_target" > "$tar_target.md5sum"
-backup_file="$backup_dir/`basename "$te_dir"`.`date +%s`.tar.gz"
+backup_file="$backup_dir/`basename "$te_dir"`.`date +%F-%T`.tar.gz"
 tar czvf "$backup_file" "$dump_target" "$dump_target.md5sum" "$tar_target" "$tar_target.md5sum"
 
 #清理临时文件
