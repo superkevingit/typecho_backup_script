@@ -1,0 +1,2 @@
+# Back up at 00:00 everyday 
+* 0 * * * /bin/bash /home/pi/Backup/typecho_backup/backup_cron.sh

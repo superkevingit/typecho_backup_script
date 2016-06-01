@@ -77,6 +77,11 @@ md5sum "$tar_target" > "$tar_target.md5sum"
 backup_file="$backup_dir/`basename "$te_dir"`.`date +%F-%T`.tar.gz"
 tar czvf "$backup_file" "$dump_target" "$dump_target.md5sum" "$tar_target" "$tar_target.md5sum"
 
+echo "Prepare"
+test -d "/home/pi/Backup/vps" && rm -rf "/home/pi/Backup/vps"
+mkdir -p "/home/pi/Backup/vps"
+cp "$backup_file" "/home/pi/Backup/vps" -rf
+
 #清理临时文件
 rm $tar_target
 rm "$tar_target.md5sum"
