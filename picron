@@ -1,2 +1,2 @@
 # Back up at 00:00 everyday 
-* 0 * * * /bin/bash /home/pi/Backup/typecho_backup/backup_cron.sh 2>&1 1>&"/home/pi/Backup/log-`date +%F%T`.txt"
+0 0 */3 * * /bin/bash /home/pi/Backup/typecho_backup/backup_cron.sh 2>&1 1>&"/home/pi/Backup/log-`date +%F%T`.txt"
