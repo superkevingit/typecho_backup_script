@@ -44,7 +44,8 @@ test "$delta_time" -lt "$min_time" && die "Time from last backup is less then $m
 
 #初始化变量
 te_config="$te_dir/config.inc.php"
-te_usr_dir="$te_dir/usr"
+#te_usr_dir="$te_dir/usr"
+te_usr_dir="$te_dir"
 
 #初始化环境
 test -f "$te_config" || die "Can not find config file: $te_config"
