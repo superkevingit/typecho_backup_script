@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/bin/bash /home/pi/Backup/typecho_backup/backup_typecho.sh /home/wwwroot/www.bitbite.cn
+/bin/bash /path/to/backup_scipt/backup_typecho.sh /path/to/typecho_dir

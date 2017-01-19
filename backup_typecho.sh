@@ -1,13 +1,8 @@
 #!/bin/sh
 
-################################
-# 作用：TE备份脚本。将数据库和usr目录备份打包。
-# 版本：1.0, 2016-05-31
-# 作者：www.bitbite.cn
-# 用法：假如typecho安装在/path/to/yoursite.com/，那么执行“./backup_typecho.sh /path/to/yoursite.com”即可开始备份，
-#       备份结果放在$backup_dir/yoursite.com目录下。使用时注意给$backup_dir目录添加写入权限。
-################################
-backup_dir="/home/pi/Backup/"
+# 此处可自行设置
+backup_dir="/home/backup"
+
 function print_help(){
 	echo 'Usage: $shell dir_to_typecho'
 }
